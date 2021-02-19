@@ -20,6 +20,9 @@
     "start:server": "node ./dist/index.js",
     "start": "concurrently npm:start:*"
   },
+  "engines": {
+    "node" : "^12.16.3"
+  },
   "husky": {
     "hooks": {
       "prepare-commit-msg": "./scripts/add_issue_number_into_commit.sh $HUSKY_GIT_PARAMS"
