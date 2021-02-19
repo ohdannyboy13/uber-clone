@@ -102,7 +102,6 @@ const localStateLink = withClientState({
 				return null;
 			}
 		}
-<<<<<<< HEAD
 	},
 	request: async (operation: Operation) => {
 		operation.setContext({
@@ -111,17 +110,7 @@ const localStateLink = withClientState({
 			}
 		});
 	},
-<<<<<<< HEAD
-<<<<<<< HEAD
 	uri: "http://localhost:4000/graphql"
-=======
-	uri: "https://localhost:4000/graphql"
->>>>>>> 37ade45... [#1] dev env setting
-=======
-	uri: "http://localhost:4000/graphql"
->>>>>>> 58f39ad... [#1] router enviroment setting
-=======
-	}
 });
 
 const client = new ApolloClient({
@@ -131,7 +120,6 @@ const client = new ApolloClient({
 		localStateLink,
 		concat(authMiddleware, combinedLinks)
 	])
->>>>>>> 428caad... [#4]subscription setting
 });
 
 export default client;
