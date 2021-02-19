@@ -21,7 +21,7 @@
     "start": "concurrently npm:start:*"
   },
   "engines": {
-    "node" : "^12.16.3"
+    "node": "^12.16.3"
   },
   "husky": {
     "hooks": {
