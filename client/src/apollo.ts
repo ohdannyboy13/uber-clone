@@ -103,14 +103,6 @@ const localStateLink = withClientState({
 			}
 		}
 	},
-	request: async (operation: Operation) => {
-		operation.setContext({
-			headers: {
-				"X-JWT": sessionStorage.getItem("X-JWT") || ""
-			}
-		});
-	},
-	uri: "http://localhost:4000/graphql"
 });
 
 const client = new ApolloClient({
